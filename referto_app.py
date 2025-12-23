@@ -61,4 +61,4 @@ if st.button("Spiegami e Rassicurami"):
 st.divider()
 # Qui creiamo il link cliccabile usando la sintassi Markdown: [Testo](Link)
 st.markdown("App realizzata da **[Marco Pingitore](https://www.marcopingitore.it)**")
-st.caption("⚠️ ATTENZIONE: Servizio sperimentale basato su AI. Non sostituisce il parere medico.")
+st.caption("⚠️ ATTENZIONE: Servizio sperimentale basato su AI. Non sostituisce il parere medico. Non inserire dati personali.")
