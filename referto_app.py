@@ -6,9 +6,9 @@ import os # Ci serve per controllare se il logo esiste
 st.set_page_config(page_title="ChiaroReferto", page_icon="🩺")
 
 # --- LOGO E SIDEBAR ---
-# Controlliamo se c'è il file logo.png, altrimenti non mostriamo nulla (per evitare errori)
+# Controlliamo se c'è il file logo.png
 if os.path.exists("logo.png"):
-    st.sidebar.image("logo.png", width=200) # Puoi cambiare width per ingrandirlo/rimpicciolirlo
+    st.sidebar.image("logo.png", width=200)
 else:
     st.sidebar.write("*(Inserisci un file 'logo.png' nella cartella per vedere il logo qui)*")
 
@@ -57,8 +57,15 @@ if st.button("Spiegami e Rassicurami"):
         except Exception as e:
             st.error(f"Si è verificato un errore: {e}")
 
-# --- FOOTER (FIRMA) ---
+# --- FOOTER & CREDITS ---
 st.divider()
-# Qui creiamo il link cliccabile usando la sintassi Markdown: [Testo](Link)
-st.markdown("App realizzata da **[Marco Pingitore](https://www.marcopingitore.it)**")
-st.caption("⚠️ ATTENZIONE: Servizio sperimentale basato su AI. Non sostituisce il parere medico. Non inserire dati personali.")
+st.markdown(
+    """
+    <div style='text-align: center; color: grey; font-size: 0.8em;'>
+        App realizzata da <b><a href='https://www.marcopingitore.it' target='_blank' style='text-decoration: none; color: inherit;'>Marco Pingitore</a></b><br>
+        Rilasciato sotto licenza <b>EUPL v1.2</b> (European Union Public License).<br>
+        Software conforme per il riuso nella Pubblica Amministrazione.
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
