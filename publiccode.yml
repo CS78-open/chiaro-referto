@@ -1,0 +1,32 @@
+# This file describes the software according to the publiccode.yml standard.
+publiccodeYmlVersion: '0.2'
+name: ChiaroReferto
+url: 'https://github.com/TUO_USERNAME/chiaro-referto'
+landingURL: 'https://chiaro-referto.streamlit.app'
+softwareVersion: '1.2'
+releaseDate: '2025-12-26'
+logo: 'logo.png'
+platforms:
+  - web
+categories:
+  - healthcare
+  - medical-specialties
+usedBy:
+  - Marco Pingitore
+developmentStatus: stable
+softwareType: standalone/web
+description:
+  it: |
+    ChiaroReferto è uno strumento di supporto al cittadino per la comprensione dei referti medici.
+    Utilizza l'Intelligenza Artificiale Generativa per "tradurre" il linguaggio tecnico in termini semplici
+    e suggerire domande pertinenti da porre al medico curante.
+    L'applicazione non salva dati sensibili (GDPR compliant by design).
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: Marco Pingitore
+  repoOwner: Marco Pingitore
+intendedAudience:
+  scope:
+    - healthcare
+    - public-administration
+    - citizens
